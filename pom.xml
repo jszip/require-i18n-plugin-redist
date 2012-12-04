@@ -25,7 +25,7 @@
 
   <groupId>org.jszip.redist</groupId>
   <artifactId>require-i18n-plugin</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>2.0.0-SNAPSHOT</version>
   <packaging>jszip</packaging>
 
   <name>RequireJS/AMD i18n Loader Plugin</name>
@@ -70,7 +70,8 @@
     <dependency>
       <groupId>org.jszip.redist</groupId>
       <artifactId>require</artifactId>
-      <version>1.0.8</version>
+      <!-- minimum require version for i18n plugin -->
+      <version>2.0.0</version>
       <type>jszip</type>
     </dependency>
   </dependencies>
@@ -114,7 +115,7 @@
               <goal>download-single</goal>
             </goals>
             <configuration>
-              <url>https://raw.github.com/jrburke/requirejs/${require-version}/</url>
+              <url>https://raw.github.com/requirejs/i18n/${require-version}/</url>
               <fromFile>i18n.js</fromFile>
               <toFile>${project.build.outputDirectory}/i18n.js</toFile>
             </configuration>
